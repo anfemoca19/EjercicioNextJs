@@ -42,8 +42,8 @@ const Form: React.FC = () => {
 
   return (
     <div>
-      <main className="container mx-auto p-4">
-        <h1 className="text-3xl text-center mt-10">Formulario</h1>
+      <main className="flex  container justify-center flex-col items-center mx-auto p-4">
+        <h1 className="text-3xl text-center mt-10 mb-8">Formulario</h1>
         <UserForm onSubmit={addUser} />
         {editingUser ? (
           <div>

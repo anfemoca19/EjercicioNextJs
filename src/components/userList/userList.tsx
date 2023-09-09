@@ -16,15 +16,18 @@ interface UserListProps {
 const UserList: React.FC<UserListProps> = ({ users, onEdit, onDelete }) => {
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-4">Lista de Usuarios</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-center">Lista de Usuarios</h2>
       <ul>
         {users.map((user) => (
-          <li key={user.id}>
-            <p>Nombre: {user.name}</p>
-            <p>Correo Electrónico: {user.email}</p>
-            <p>Telefono : {user.phone}</p>
-            <button onClick={() => onEdit(user)}>Editar</button>
-            <button onClick={() => onDelete(user.id)}>Eliminar</button>
+          <li key={user.id} className=''>
+            <p className='text-center '>Nombre: {user.name}</p>
+            <p className='text-center'>Correo Electrónico: {user.email}</p>
+            <p className='text-center'>Telefono : {user.phone}</p>
+            <div className='flex justify-center'>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => onEdit(user)}>Editar</button>
+              <button className="bg-red-400 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => onDelete(user.id)}>Eliminar</button>
+            </div>
+            
             <hr className="my-2" />
           </li>
         ))}
