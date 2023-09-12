@@ -10,7 +10,7 @@ export default function Home() {
           <Link className="text-blue-500 hover:text-blue-800" href="/form">Formulario</Link>
         </li>
         <li className="mr-6">
-          <Link className="text-blue-500 hover:text-blue-800" href="#">Buscardor de imagenes</Link>
+          <Link className="text-blue-500 hover:text-blue-800" href="/searchimages">Buscardor de imagenes</Link>
         </li>
         <li className="mr-6">
           <Link className="text-blue-500 hover:text-blue-800" href="#">Tareas</Link>
