@@ -9,3 +9,12 @@ export interface Images {
   };
   description: string | null;
 }
+
+
+
+
+export interface Task {
+  id: number;
+  text: string;
+  completed: boolean;
+}
